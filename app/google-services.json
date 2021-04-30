@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820605716352",
+    "project_id": "dsauthpage",
+    "storage_bucket": "dsauthpage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820605716352:android:d92db8c3814ecb89292365",
+        "android_client_info": {
+          "package_name": "com.monstertechno.btcauthpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820605716352-tqmaulqkj51otbk8srq2gorro0un6o7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJIqQWkHpxkP3LNhUPg-v3-oI_yJ2cjS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820605716352-tqmaulqkj51otbk8srq2gorro0un6o7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
