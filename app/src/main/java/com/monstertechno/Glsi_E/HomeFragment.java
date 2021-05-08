@@ -1,7 +1,6 @@
-package com.monstertechno.btcauthpage;
+package com.monstertechno.Glsi_E;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.List;
 import java.util.Map;
 
 public class HomeFragment extends Fragment {
@@ -26,11 +24,10 @@ public class HomeFragment extends Fragment {
     // our Firebase Database.
     FirebaseDatabase firebaseDatabase;
 
-    // creating a variable for our
-    // Database Reference for Firebase.
+
     DatabaseReference databaseReference;
 
-    // variable for Text view.
+
     private TextView retriveTV;
     @Nullable
     @Override
@@ -38,38 +35,31 @@ public class HomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
        databaseReference = FirebaseDatabase.getInstance().getReference().child("Post");
 
-        // initializing our object class variable.
+
         retriveTV = v.findViewById(R.id.idTVRetriveData);
 
-        // calling method
-        // for getting data.
+
         getdata();
         return v;
     }
 
     private void getdata() {
 
-        // calling add value event listener method
-        // for getting the values from database.
+
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                // this method is call to get the realtime
-                // updates in the data.
-                // this method is called when the data is
-                // changed in our Firebase console.
-                // below line is for getting the data from
-                // snapshot of our database.
-                //String value = snapshot.getValue(String.class);
+
                 Map<String, Object> map = (Map<String, Object>) snapshot.getValue();
 
-                // after getting the value we are setting
-                // our value to our text view in below line.
+
                     retriveTV.setText(map.values().toString());
 
 
 
             }
+
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {

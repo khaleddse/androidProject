@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.monstertechno.btcauthpage">
+    package="com.monstertechno.Glsi_E">
 
     <application
         android:allowBackup="true"
@@ -9,12 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BTCAuthPage">
-        <activity android:name=".AucuielPage"></activity>
-        <activity android:name=".AddAnnonce" />
-        <activity android:name=".SignupPage" />
-        <activity android:name=".LoginPage" />
-        <activity android:name=".BasePage"/>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.monstertechno.Glsi_E.SignupPage" />
+        <activity android:name="com.monstertechno.Glsi_E.LoginPage" />
+        <activity android:name="com.monstertechno.Glsi_E.BasePage"/>
+        <activity android:name="com.monstertechno.Glsi_E.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

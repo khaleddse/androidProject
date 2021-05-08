@@ -1,7 +1,6 @@
-package com.monstertechno.btcauthpage;
+package com.monstertechno.Glsi_E;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
@@ -17,7 +16,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
-import com.monstertechno.btcauthpage.R;
+import com.monstertechno.Glsi_E.R;
 
 import java.util.HashMap;
 
