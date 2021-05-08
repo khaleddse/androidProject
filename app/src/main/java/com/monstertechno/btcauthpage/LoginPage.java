@@ -60,7 +60,7 @@ public class LoginPage extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
                                 Toast.makeText(LoginPage.this, "Login Successfully !!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(LoginPage.this , AucuielPage.class));
+                                startActivity(new Intent(LoginPage.this , BasePage.class));
                                 finish();
                             }
                         }).addOnFailureListener(new OnFailureListener() {

@@ -13,7 +13,9 @@
         <activity android:name=".AddAnnonce" />
         <activity android:name=".SignupPage" />
         <activity android:name=".LoginPage" />
+        <activity android:name=".BasePage"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
